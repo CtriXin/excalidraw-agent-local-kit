@@ -1,0 +1,11 @@
+.DS_Store
+.claude/
+.codex/
+.idea/
+.vscode/
+node_modules/
+tmp/
+dist/
+*.log
+*.local.json
+
