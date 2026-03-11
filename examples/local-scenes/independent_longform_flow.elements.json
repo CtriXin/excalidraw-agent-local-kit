@@ -1,0 +1,37 @@
+{
+  "elements": [
+    { "type": "cameraUpdate", "width": 1600, "height": 1200, "x": 0, "y": 0 },
+    { "type": "rectangle", "id": "zone", "x": 60, "y": 170, "width": 1480, "height": 820, "backgroundColor": "#e5dbff", "fillStyle": "solid", "strokeColor": "#8b5cf6", "strokeWidth": 2, "opacity": 35, "roundness": { "type": 3 } },
+    { "type": "text", "id": "title", "x": 90, "y": 55, "text": "independent long-form flow", "fontSize": 34, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "subtitle", "x": 90, "y": 100, "text": "long-form delivery can stay independent from branched image pipelines", "fontSize": 20, "strokeColor": "#555555" },
+
+    { "type": "rectangle", "id": "src", "x": 120, "y": 360, "width": 240, "height": 110, "backgroundColor": "#d0bfff", "fillStyle": "solid", "strokeColor": "#8b5cf6", "roundness": { "type": 3 } },
+    { "type": "text", "id": "src-t", "x": 155, "y": 390, "text": "source input", "fontSize": 24, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "src-d", "x": 145, "y": 515, "text": "brief / notes / source markdown", "fontSize": 18, "strokeColor": "#555555" },
+
+    { "type": "rectangle", "id": "build", "x": 470, "y": 360, "width": 280, "height": 110, "backgroundColor": "#d0bfff", "fillStyle": "solid", "strokeColor": "#8b5cf6", "roundness": { "type": 3 } },
+    { "type": "text", "id": "build-t", "x": 510, "y": 390, "text": "draft_builder.py", "fontSize": 24, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "build-d", "x": 485, "y": 515, "text": "prepare long-form copy and payload", "fontSize": 18, "strokeColor": "#555555" },
+
+    { "type": "rectangle", "id": "payload", "x": 860, "y": 360, "width": 320, "height": 110, "backgroundColor": "#c3fae8", "fillStyle": "solid", "strokeColor": "#22c55e", "roundness": { "type": 3 } },
+    { "type": "text", "id": "payload-t", "x": 900, "y": 390, "text": "longform_request.json", "fontSize": 22, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "payload-d", "x": 885, "y": 425, "text": "+ image_context.json", "fontSize": 20, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "payload-x", "x": 900, "y": 515, "text": "payload stays independent from image branches", "fontSize": 18, "strokeColor": "#555555" },
+
+    { "type": "rectangle", "id": "pub", "x": 1280, "y": 360, "width": 240, "height": 110, "backgroundColor": "#ffd8a8", "fillStyle": "solid", "strokeColor": "#f59e0b", "roundness": { "type": 3 } },
+    { "type": "text", "id": "pub-t", "x": 1330, "y": 390, "text": "publisher", "fontSize": 24, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "pub-d", "x": 1300, "y": 515, "text": "run the long-form delivery flow", "fontSize": 18, "strokeColor": "#555555" },
+
+    { "type": "rectangle", "id": "tip", "x": 110, "y": 760, "width": 560, "height": 150, "backgroundColor": "#fff3bf", "fillStyle": "solid", "strokeColor": "#f59e0b", "opacity": 55, "roundness": { "type": 3 } },
+    { "type": "text", "id": "tip-t", "x": 140, "y": 790, "text": "how to read this", "fontSize": 24, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "tip-d", "x": 140, "y": 835, "text": "1. follow the line from left to right\\n2. this flow stays independent\\n3. merge only when your project explicitly needs it", "fontSize": 18, "strokeColor": "#555555" },
+
+    { "type": "text", "id": "bound", "x": 905, "y": 695, "text": "independent boundary", "fontSize": 26, "strokeColor": "#8b5cf6" },
+    { "type": "rectangle", "id": "bound-box", "x": 830, "y": 650, "width": 420, "height": 120, "backgroundColor": "#e5dbff", "fillStyle": "solid", "strokeColor": "#8b5cf6", "opacity": 45, "roundness": { "type": 3 } },
+    { "type": "text", "id": "bound-d", "x": 875, "y": 735, "text": "no forced branching into image-first modes", "fontSize": 18, "strokeColor": "#555555" },
+
+    { "type": "arrow", "id": "a1", "x": 360, "y": 415, "width": 110, "height": 0, "points": [[0,0],[110,0]], "endArrowhead": "arrow", "strokeColor": "#1e1e1e" },
+    { "type": "arrow", "id": "a2", "x": 750, "y": 415, "width": 110, "height": 0, "points": [[0,0],[110,0]], "endArrowhead": "arrow", "strokeColor": "#1e1e1e" },
+    { "type": "arrow", "id": "a3", "x": 1180, "y": 415, "width": 100, "height": 0, "points": [[0,0],[100,0]], "endArrowhead": "arrow", "strokeColor": "#1e1e1e" }
+  ]
+}

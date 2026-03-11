@@ -1,0 +1,59 @@
+{
+  "elements": [
+    { "type": "cameraUpdate", "width": 1600, "height": 1200, "x": 0, "y": 0 },
+    { "type": "rectangle", "id": "zone", "x": 40, "y": 140, "width": 1520, "height": 920, "backgroundColor": "#dbe4ff", "fillStyle": "solid", "strokeColor": "#4a9eed", "strokeWidth": 2, "opacity": 35, "roundness": { "type": 3 } },
+    { "type": "text", "id": "title", "x": 80, "y": 40, "text": "branching asset pipeline", "fontSize": 34, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "subtitle", "x": 80, "y": 85, "text": "local scene first, then choose direct or template output", "fontSize": 20, "strokeColor": "#555555" },
+
+    { "type": "rectangle", "id": "src", "x": 100, "y": 300, "width": 220, "height": 110, "backgroundColor": "#d0bfff", "fillStyle": "solid", "strokeColor": "#8b5cf6", "roundness": { "type": 3 } },
+    { "type": "text", "id": "src-t", "x": 132, "y": 330, "text": "source input", "fontSize": 24, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "src-d", "x": 120, "y": 455, "text": "brief / markdown / raw notes", "fontSize": 18, "strokeColor": "#555555" },
+
+    { "type": "rectangle", "id": "build", "x": 390, "y": 300, "width": 260, "height": 110, "backgroundColor": "#d0bfff", "fillStyle": "solid", "strokeColor": "#8b5cf6", "roundness": { "type": 3 } },
+    { "type": "text", "id": "build-t", "x": 425, "y": 330, "text": "draft_builder.py", "fontSize": 24, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "build-d", "x": 410, "y": 455, "text": "structure content and normalize input", "fontSize": 18, "strokeColor": "#555555" },
+
+    { "type": "rectangle", "id": "payload", "x": 730, "y": 300, "width": 280, "height": 110, "backgroundColor": "#c3fae8", "fillStyle": "solid", "strokeColor": "#22c55e", "roundness": { "type": 3 } },
+    { "type": "text", "id": "payload-t", "x": 755, "y": 330, "text": "request.json + context.json", "fontSize": 22, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "payload-d", "x": 770, "y": 455, "text": "delivery payload and visual context", "fontSize": 18, "strokeColor": "#555555" },
+
+    { "type": "rectangle", "id": "router", "x": 1090, "y": 300, "width": 260, "height": 110, "backgroundColor": "#ffd8a8", "fillStyle": "solid", "strokeColor": "#f59e0b", "roundness": { "type": 3 } },
+    { "type": "text", "id": "router-t", "x": 1135, "y": 330, "text": "asset_router.py", "fontSize": 24, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "router-d", "x": 1110, "y": 455, "text": "decide which image set to produce", "fontSize": 18, "strokeColor": "#555555" },
+
+    { "type": "diamond", "id": "split", "x": 1180, "y": 560, "width": 120, "height": 120, "backgroundColor": "#fff3bf", "fillStyle": "solid", "strokeColor": "#f59e0b" },
+    { "type": "text", "id": "split-t", "x": 1198, "y": 607, "text": "split", "fontSize": 24, "strokeColor": "#1e1e1e" },
+
+    { "type": "rectangle", "id": "direct", "x": 860, "y": 780, "width": 250, "height": 110, "backgroundColor": "#b2f2bb", "fillStyle": "solid", "strokeColor": "#22c55e", "roundness": { "type": 3 } },
+    { "type": "text", "id": "direct-t", "x": 885, "y": 810, "text": "direct_images", "fontSize": 24, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "direct-d", "x": 872, "y": 935, "text": "produce a ready-to-publish image set", "fontSize": 18, "strokeColor": "#555555" },
+
+    { "type": "rectangle", "id": "templ", "x": 1180, "y": 780, "width": 250, "height": 110, "backgroundColor": "#a5d8ff", "fillStyle": "solid", "strokeColor": "#4a9eed", "roundness": { "type": 3 } },
+    { "type": "text", "id": "templ-t", "x": 1208, "y": 810, "text": "template_cards", "fontSize": 24, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "templ-d", "x": 1195, "y": 935, "text": "fall back to template cover and cards", "fontSize": 18, "strokeColor": "#555555" },
+
+    { "type": "rectangle", "id": "pub", "x": 1180, "y": 980, "width": 250, "height": 110, "backgroundColor": "#eebefa", "fillStyle": "solid", "strokeColor": "#ec4899", "roundness": { "type": 3 } },
+    { "type": "text", "id": "pub-t", "x": 1230, "y": 1010, "text": "publisher", "fontSize": 24, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "pub-d", "x": 1195, "y": 1135, "text": "final delivery only reads image paths", "fontSize": 18, "strokeColor": "#555555" },
+
+    { "type": "rectangle", "id": "primary", "x": 1480, "y": 910, "width": 180, "height": 80, "backgroundColor": "#c3fae8", "fillStyle": "solid", "strokeColor": "#22c55e", "roundness": { "type": 3 } },
+    { "type": "text", "id": "primary-t", "x": 1510, "y": 938, "text": "primary", "fontSize": 22, "strokeColor": "#1e1e1e" },
+    { "type": "rectangle", "id": "fallback", "x": 1480, "y": 1015, "width": 180, "height": 80, "backgroundColor": "#ffd8a8", "fillStyle": "solid", "strokeColor": "#f59e0b", "roundness": { "type": 3 } },
+    { "type": "text", "id": "fallback-t", "x": 1503, "y": 1043, "text": "fallback", "fontSize": 22, "strokeColor": "#1e1e1e" },
+
+    { "type": "rectangle", "id": "tip", "x": 70, "y": 930, "width": 520, "height": 150, "backgroundColor": "#fff3bf", "fillStyle": "solid", "strokeColor": "#f59e0b", "opacity": 55, "roundness": { "type": 3 } },
+    { "type": "text", "id": "tip-t", "x": 100, "y": 960, "text": "how to read this", "fontSize": 24, "strokeColor": "#1e1e1e" },
+    { "type": "text", "id": "tip-d", "x": 100, "y": 1005, "text": "1. read left to right\\n2. check the split\\n3. publisher only cares about final image paths", "fontSize": 18, "strokeColor": "#555555" },
+
+    { "type": "arrow", "id": "a1", "x": 320, "y": 355, "width": 70, "height": 0, "points": [[0,0],[70,0]], "endArrowhead": "arrow", "strokeColor": "#1e1e1e" },
+    { "type": "arrow", "id": "a2", "x": 650, "y": 355, "width": 80, "height": 0, "points": [[0,0],[80,0]], "endArrowhead": "arrow", "strokeColor": "#1e1e1e" },
+    { "type": "arrow", "id": "a3", "x": 1010, "y": 355, "width": 80, "height": 0, "points": [[0,0],[80,0]], "endArrowhead": "arrow", "strokeColor": "#1e1e1e" },
+    { "type": "arrow", "id": "a4", "x": 1225, "y": 410, "width": 0, "height": 150, "points": [[0,0],[0,150]], "endArrowhead": "arrow", "strokeColor": "#1e1e1e" },
+    { "type": "arrow", "id": "a5", "x": 1210, "y": 680, "width": -160, "height": 100, "points": [[0,0],[-160,100]], "endArrowhead": "arrow", "strokeColor": "#22c55e" },
+    { "type": "arrow", "id": "a6", "x": 1270, "y": 680, "width": 30, "height": 100, "points": [[0,0],[30,100]], "endArrowhead": "arrow", "strokeColor": "#4a9eed" },
+    { "type": "arrow", "id": "a7", "x": 1305, "y": 890, "width": 0, "height": 90, "points": [[0,0],[0,90]], "endArrowhead": "arrow", "strokeColor": "#1e1e1e" },
+    { "type": "arrow", "id": "a8", "x": 1430, "y": 1020, "width": 50, "height": -55, "points": [[0,0],[50,-55]], "endArrowhead": "arrow", "strokeColor": "#22c55e" },
+    { "type": "arrow", "id": "a9", "x": 1430, "y": 1040, "width": 50, "height": 15, "points": [[0,0],[50,15]], "endArrowhead": "arrow", "strokeColor": "#f59e0b" }
+  ]
+}
+
