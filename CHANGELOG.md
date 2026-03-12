@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.2 — 2026-03-12
+- Roll forward native `.excalidraw` 文本宽度估算修正，确保 patch release tag 指向包含最新导出逻辑的 commit
+
 ## v0.2.1 — 2026-03-12
 - 改进 native `.excalidraw` 导出时的文本宽度估算：区分空白、CJK 与普通字符，减少 browser import 后的文本尺寸偏差
 

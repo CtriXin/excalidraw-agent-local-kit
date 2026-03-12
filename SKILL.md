@@ -1,6 +1,6 @@
 ---
 name: excalidraw-agent-local-kit
-version: "0.2.1"
+version: "0.2.2"
 description: "Local-first Excalidraw MCP workflow for Codex and Claude Code. Use local scene files as truth, prefer local MCP, and verify final share pages when exporting online links."
 argument-hint: "diagram goal, existing scene path, or requested patch"
 allowed-tools: Read, Write, Bash, Grep, Glob
