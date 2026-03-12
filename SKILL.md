@@ -1,6 +1,6 @@
 ---
 name: excalidraw-agent-local-kit
-version: "0.1.0"
+version: "0.2.0"
 description: "Local-first Excalidraw MCP workflow for Codex and Claude Code. Use local scene files as truth, prefer local MCP, and verify final share pages when exporting online links."
 argument-hint: "diagram goal, existing scene path, or requested patch"
 allowed-tools: Read, Write, Bash, Grep, Glob
@@ -23,6 +23,7 @@ Use this skill when the task is about:
 3. For critical labels, titles, notes, and instructions, use explicit `text` elements instead of relying only on shape labels.
 4. If the user asks for an online share link, success means the **final share page** visibly contains the expected text.
 5. If an existing scene file exists, patch it incrementally instead of redrawing the full diagram.
+6. Do not treat a local `*.elements.json` file as a native excalidraw.com upload file. Export a `.excalidraw` scene first if the user needs browser upload/open.
 
 ## Suggested Workflow
 
@@ -38,9 +39,10 @@ Use this skill when the task is about:
 Only do this when the user explicitly wants a shareable online link.
 
 1. Prepare the scene locally first.
-2. Export or recreate it online.
-3. Open the final share page.
-4. Verify text is visible on the share page before claiming success.
+2. If the user needs a file upload/open path, export a native `.excalidraw` file with `node scripts/export_native_scene.js <scene.elements.json>`.
+3. Export or recreate it online.
+4. Open the final share page.
+5. Verify text is visible on the share page before claiming success.
 
 ## If Text Is Missing
 
@@ -64,4 +66,3 @@ Generic scene templates:
 If the agent cannot use local MCP and only has browser control, use:
 
 - `prompts/online-claude-browser-playbook.md`
-

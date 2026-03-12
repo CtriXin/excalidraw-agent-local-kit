@@ -90,6 +90,29 @@ Both symlinks will point to this repo.
 3. Only generate a share link when you explicitly need one.
 4. Treat the share page as a delivery artifact, not as the source of truth.
 
+## File Formats
+
+This kit intentionally uses a lightweight local scene format:
+
+- local truth source: `*.elements.json`
+- native Excalidraw import file: `*.excalidraw`
+
+Important:
+
+- `*.elements.json` is for the MCP/local workflow
+- it is **not** the native file format that excalidraw.com accepts via upload/open
+- if you upload a local `*.elements.json` file directly to excalidraw.com, Excalidraw will reject it as an invalid file
+
+To generate a native `.excalidraw` file from a local scene:
+
+```bash
+node scripts/export_native_scene.js path/to/scene.elements.json
+```
+
+This writes `path/to/scene.excalidraw`, strips MCP-only pseudo-elements such as `cameraUpdate`, and converts shorthand MCP elements into native Excalidraw elements with proper text metrics.
+
+The export helper uses Bun to run Excalidraw's browser-side conversion logic locally, so `bun` must be available on `PATH`.
+
 ## Share-Link Text Pitfall
 
 The most common failure mode is:
@@ -124,6 +147,8 @@ excalidraw-agent-local-kit/
 ├── SKILL.md
 ├── README.md
 ├── scripts/
+│   ├── export_native_scene.js
+│   ├── export_native_scene_impl.mjs
 │   ├── install_symlinks.sh
 │   └── preflight.sh
 ├── prompts/
@@ -149,4 +174,3 @@ This repo depends on the upstream Excalidraw MCP project:
 - <https://github.com/excalidraw/excalidraw-mcp>
 
 The upstream server remains upstream work. This repo only open-sources the local workflow, scene-file practices, and agent-facing integration layer.
-

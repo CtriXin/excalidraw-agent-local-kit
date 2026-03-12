@@ -14,5 +14,5 @@ Workflow:
 1. copy one template
 2. edit the local scene file
 3. preview with local Excalidraw MCP
-4. export a share link only if needed
-
+4. if you need browser upload/open, run `node scripts/export_native_scene.js your_scene.elements.json`
+5. export a share link only if needed
