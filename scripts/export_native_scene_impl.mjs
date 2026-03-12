@@ -24,7 +24,16 @@ function createMeasureContext() {
     measureText(text) {
       const match = /(\d+(?:\.\d+)?)px/.exec(this.font);
       const fontSize = match ? Number(match[1]) : 16;
-      const width = String(text).length * fontSize * 0.5;
+      let width = 0;
+      for (const char of String(text)) {
+        if (/\s/.test(char)) {
+          width += fontSize * 0.35;
+        } else if (/[\u2e80-\u9fff\uac00-\ud7af\uff00-\uffef]/u.test(char)) {
+          width += fontSize;
+        } else {
+          width += fontSize * 0.55;
+        }
+      }
       return {
         width,
         actualBoundingBoxAscent: fontSize * 0.8,

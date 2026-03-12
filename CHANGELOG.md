@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.1 — 2026-03-12
+- 改进 native `.excalidraw` 导出时的文本宽度估算：区分空白、CJK 与普通字符，减少 browser import 后的文本尺寸偏差
+
 ## v0.2.0 — 2026-03-12
 - 新增 `scripts/export_native_scene.js` 与 `scripts/export_native_scene_impl.mjs`，可将本地 `*.elements.json` 导出为原生 `.excalidraw` 文件
 - 补充 `README.md` 的 File Formats 说明，明确区分本地 truth source 与 excalidraw.com 可上传格式
