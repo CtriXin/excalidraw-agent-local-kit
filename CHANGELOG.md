@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.3.0 — 2026-03-13
+- `allowed-tools` 加入本地 MCP 工具，skill 执行时可直接调用 `create_view` 和 `export_to_excalidraw`
+- 默认 workflow 改为 Local-first：生成 `.elements.json` → 自动 `export_native_scene.js` → 输出 `.excalidraw` 文件
+- 移除 Browser-import mode（合并进 Local-first），简化为两个模式：Local-first / Online-share
+- 新增 Layout Defaults 间距规范：同层横向 ≥80px、层间纵向 ≥100px、矩形最小 240×80，防止文字挤压截断
+- 更新 README workflow 段落和 File Structure
+- 新增 workflow 流程图 `examples/local-scenes/v030_workflow_test.excalidraw`
+
 ## v0.2.2 — 2026-03-12
 - Roll forward native `.excalidraw` 文本宽度估算修正，确保 patch release tag 指向包含最新导出逻辑的 commit
 

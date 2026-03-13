@@ -8,4 +8,4 @@ tmp/
 dist/
 *.log
 *.local.json
-
+.ai/agent-release-notes.md

@@ -83,12 +83,25 @@ This will create:
 
 Both symlinks will point to this repo.
 
-## Local-First Workflow
+## Workflow
 
-1. Edit a local `*.elements.json` scene file first.
-2. Use local Excalidraw MCP to preview or continue editing.
-3. Only generate a share link when you explicitly need one.
-4. Treat the share page as a delivery artifact, not as the source of truth.
+Two modes, depending on what the user needs:
+
+### Local-first mode (default)
+
+1. Read or create a local `*.elements.json` scene file.
+2. Patch or extend the elements array.
+3. Save `*.elements.json` as the truth source.
+4. Run `node scripts/export_native_scene.js <scene.elements.json>` to generate a native `.excalidraw` file.
+5. User opens the `.excalidraw` file in excalidraw.com.
+
+### Online-share mode
+
+1. Complete local-first steps 1–4.
+2. Call `mcp export_to_excalidraw` to upload and get a shareable link.
+3. Verify text is visible on the final share page.
+
+> See the workflow diagram: [`examples/local-scenes/v030_workflow_test.excalidraw`](examples/local-scenes/v030_workflow_test.excalidraw) — open it in excalidraw.com to view.
 
 ## File Formats
 
@@ -146,6 +159,9 @@ These are generic workflow examples with no business-specific content.
 excalidraw-agent-local-kit/
 ├── SKILL.md
 ├── README.md
+├── CHANGELOG.md
+├── docs/
+│   └── v0.3.0-iteration-plan.md
 ├── scripts/
 │   ├── export_native_scene.js
 │   ├── export_native_scene_impl.mjs
@@ -160,7 +176,8 @@ excalidraw-agent-local-kit/
     └── local-scenes/
         ├── README.md
         ├── branching_asset_pipeline.elements.json
-        └── independent_longform_flow.elements.json
+        ├── independent_longform_flow.elements.json
+        └── v030_workflow_test.excalidraw
 ```
 
 ## License

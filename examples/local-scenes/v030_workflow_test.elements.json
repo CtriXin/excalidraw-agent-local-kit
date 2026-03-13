@@ -1,0 +1,62 @@
+{
+  "elements": [
+    { "type": "cameraUpdate", "width": 1600, "height": 1200, "x": -30, "y": -50 },
+
+    { "type": "text", "id": "title", "x": 420, "y": -30, "text": "excalidraw-agent-local-kit v0.3.0 Workflow", "fontSize": 32, "strokeColor": "#1e1e1e" },
+
+    { "type": "rectangle", "id": "local-zone", "x": 40, "y": 60, "width": 680, "height": 1020, "backgroundColor": "#d3f9d8", "fillStyle": "solid", "strokeColor": "#22c55e", "strokeWidth": 2, "opacity": 25, "roundness": { "type": 3 } },
+    { "type": "text", "id": "local-label", "x": 60, "y": 75, "text": "Local-first Mode (default)", "fontSize": 24, "strokeColor": "#15803d" },
+
+    { "type": "rectangle", "id": "online-zone", "x": 840, "y": 60, "width": 680, "height": 1020, "backgroundColor": "#fff3bf", "fillStyle": "solid", "strokeColor": "#f59e0b", "strokeWidth": 2, "opacity": 25, "roundness": { "type": 3 } },
+    { "type": "text", "id": "online-label", "x": 860, "y": 75, "text": "Online-share Mode", "fontSize": 24, "strokeColor": "#92400e" },
+
+    { "type": "rectangle", "id": "l1", "x": 160, "y": 160, "width": 300, "height": 90, "backgroundColor": "#a5d8ff", "fillStyle": "solid", "roundness": { "type": 3 }, "strokeColor": "#4a9eed", "strokeWidth": 2, "label": { "text": "User Request", "fontSize": 22 } },
+    { "type": "text", "id": "l1d", "x": 180, "y": 270, "text": "\"画个图\" / \"导出\"", "fontSize": 21, "strokeColor": "#555555" },
+
+    { "type": "arrow", "id": "la1", "x": 310, "y": 310, "width": 0, "height": 100, "points": [[0,0],[0,100]], "strokeColor": "#22c55e", "strokeWidth": 2, "endArrowhead": "arrow" },
+
+    { "type": "rectangle", "id": "l2", "x": 130, "y": 410, "width": 360, "height": 90, "backgroundColor": "#c3fae8", "fillStyle": "solid", "roundness": { "type": 3 }, "strokeColor": "#22c55e", "strokeWidth": 2, "label": { "text": "read / patch elements", "fontSize": 22 } },
+    { "type": "text", "id": "l2d", "x": 150, "y": 520, "text": "读取已有 .elements.json 或新建", "fontSize": 21, "strokeColor": "#555555" },
+
+    { "type": "arrow", "id": "la2", "x": 310, "y": 560, "width": 0, "height": 100, "points": [[0,0],[0,100]], "strokeColor": "#22c55e", "strokeWidth": 2, "endArrowhead": "arrow" },
+
+    { "type": "rectangle", "id": "l3", "x": 130, "y": 660, "width": 360, "height": 90, "backgroundColor": "#b2f2bb", "fillStyle": "solid", "roundness": { "type": 3 }, "strokeColor": "#22c55e", "strokeWidth": 2, "label": { "text": "save .elements.json", "fontSize": 22 } },
+    { "type": "text", "id": "l3d", "x": 150, "y": 770, "text": "truth source, 可增量 patch", "fontSize": 21, "strokeColor": "#555555" },
+
+    { "type": "arrow", "id": "la3", "x": 310, "y": 810, "width": 0, "height": 100, "points": [[0,0],[0,100]], "strokeColor": "#22c55e", "strokeWidth": 2, "endArrowhead": "arrow" },
+
+    { "type": "rectangle", "id": "l4", "x": 100, "y": 910, "width": 420, "height": 90, "backgroundColor": "#b2f2bb", "fillStyle": "solid", "roundness": { "type": 3 }, "strokeColor": "#22c55e", "strokeWidth": 2, "label": { "text": "export_native_scene.js", "fontSize": 22 } },
+    { "type": "text", "id": "l4d", "x": 110, "y": 1020, "text": "output: .excalidraw file", "fontSize": 21, "strokeColor": "#15803d" },
+    { "type": "text", "id": "l4d2", "x": 110, "y": 1050, "text": "user opens in excalidraw.com", "fontSize": 21, "strokeColor": "#15803d" },
+
+    { "type": "rectangle", "id": "r1", "x": 960, "y": 160, "width": 300, "height": 90, "backgroundColor": "#a5d8ff", "fillStyle": "solid", "roundness": { "type": 3 }, "strokeColor": "#4a9eed", "strokeWidth": 2, "label": { "text": "User Request", "fontSize": 22 } },
+    { "type": "text", "id": "r1d", "x": 980, "y": 270, "text": "\"分享链接\" / \"发给别人\"", "fontSize": 21, "strokeColor": "#555555" },
+
+    { "type": "arrow", "id": "ra1", "x": 1110, "y": 310, "width": 0, "height": 100, "points": [[0,0],[0,100]], "strokeColor": "#f59e0b", "strokeWidth": 2, "endArrowhead": "arrow" },
+
+    { "type": "rectangle", "id": "r2", "x": 930, "y": 410, "width": 360, "height": 90, "backgroundColor": "#c3fae8", "fillStyle": "solid", "roundness": { "type": 3 }, "strokeColor": "#22c55e", "strokeWidth": 2, "label": { "text": "read / patch elements", "fontSize": 22 } },
+
+    { "type": "arrow", "id": "ra2", "x": 1110, "y": 500, "width": 0, "height": 60, "points": [[0,0],[0,60]], "strokeColor": "#f59e0b", "strokeWidth": 2, "endArrowhead": "arrow" },
+
+    { "type": "rectangle", "id": "r3", "x": 930, "y": 560, "width": 360, "height": 90, "backgroundColor": "#b2f2bb", "fillStyle": "solid", "roundness": { "type": 3 }, "strokeColor": "#22c55e", "strokeWidth": 2, "label": { "text": "save .elements.json", "fontSize": 22 } },
+
+    { "type": "arrow", "id": "ra3", "x": 1110, "y": 650, "width": 0, "height": 60, "points": [[0,0],[0,60]], "strokeColor": "#f59e0b", "strokeWidth": 2, "endArrowhead": "arrow" },
+
+    { "type": "rectangle", "id": "r4", "x": 900, "y": 710, "width": 420, "height": 90, "backgroundColor": "#b2f2bb", "fillStyle": "solid", "roundness": { "type": 3 }, "strokeColor": "#22c55e", "strokeWidth": 2, "label": { "text": "export_native_scene.js", "fontSize": 22 } },
+
+    { "type": "arrow", "id": "ra4", "x": 1110, "y": 800, "width": 0, "height": 100, "points": [[0,0],[0,100]], "strokeColor": "#f59e0b", "strokeWidth": 2, "endArrowhead": "arrow" },
+
+    { "type": "rectangle", "id": "r5", "x": 880, "y": 900, "width": 460, "height": 90, "backgroundColor": "#ffd8a8", "fillStyle": "solid", "roundness": { "type": 3 }, "strokeColor": "#f59e0b", "strokeWidth": 2, "label": { "text": "mcp export_to_excalidraw", "fontSize": 22 } },
+    { "type": "text", "id": "r5d", "x": 920, "y": 1010, "text": "upload + get share link", "fontSize": 21, "strokeColor": "#92400e" },
+    { "type": "text", "id": "r5d2", "x": 920, "y": 1040, "text": "verify text visible on page", "fontSize": 21, "strokeColor": "#92400e" },
+
+    { "type": "text", "id": "shared-note", "x": 530, "y": 450, "text": "shared", "fontSize": 18, "strokeColor": "#757575" },
+    { "type": "text", "id": "shared-note2", "x": 530, "y": 700, "text": "shared", "fontSize": 18, "strokeColor": "#757575" },
+
+    { "type": "arrow", "id": "shared-a1", "x": 490, "y": 455, "width": 440, "height": 0, "points": [[0,0],[40,0]],"strokeColor": "#b0b0b0", "strokeWidth": 1, "strokeStyle": "dashed", "endArrowhead": null },
+    { "type": "arrow", "id": "shared-a2", "x": 570, "y": 455, "width": 440, "height": 0, "points": [[0,0],[360,0]],"strokeColor": "#b0b0b0", "strokeWidth": 1, "strokeStyle": "dashed", "endArrowhead": null },
+
+    { "type": "arrow", "id": "shared-a3", "x": 490, "y": 705, "width": 440, "height": 0, "points": [[0,0],[40,0]],"strokeColor": "#b0b0b0", "strokeWidth": 1, "strokeStyle": "dashed", "endArrowhead": null },
+    { "type": "arrow", "id": "shared-a4", "x": 570, "y": 705, "width": 440, "height": 0, "points": [[0,0],[360,0]],"strokeColor": "#b0b0b0", "strokeWidth": 1, "strokeStyle": "dashed", "endArrowhead": null }
+  ]
+}
